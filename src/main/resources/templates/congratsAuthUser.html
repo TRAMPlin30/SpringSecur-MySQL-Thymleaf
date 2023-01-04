@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<title>Login</title>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- custom CSS and JS -->
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <h1>Congratulations!</h1>
+    <h1>User is authenticated!</h1>
+    <hr>
+    <form th:action="@{/logout_out}" method="post">
+        <button type="submit">logout</button>
+    </form>
+</body>
+
+</html>

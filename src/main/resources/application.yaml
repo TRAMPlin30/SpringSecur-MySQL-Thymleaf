@@ -1,0 +1,22 @@
+server:
+  port: 8189
+  servlet:
+    context-path: /security
+
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        temp:
+          use_jdbc_metadata_defaults: false
+  datasource:
+    driver_class_name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/auth_jwt?useSSL=false
+    username: bestuser
+    password: bestuser
+
+
+
+
